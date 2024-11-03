@@ -5,10 +5,10 @@ HEIGHT = 600
 
 def draw():
 	screen.fill("dark green")
-	screen.draw.filled_circle((300,300),200,"white")
-	screen.draw.filled_circle((300,300),150,"black")
-	screen.draw.filled_circle((300,300),100,"blue")
-	screen.draw.filled_circle((300,300),50,"red")
-	screen.draw.filled_circle((300,300),20,"yellow")
+	r1 = Rect((200,200),(300,300))
+	screen.draw.filled_rect(r1,"white")
+	screen.draw.line((300,300),(300,400),"red")
+	screen.draw.line((300,300),(400,350),"red")
+	screen.draw.line((300,400),(400,350),"red")
 
 pgzrun.go()
